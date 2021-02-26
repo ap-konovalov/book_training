@@ -21,6 +21,7 @@ function login(email,password){
 
 function selectWorkout(workoutName){
     cy.contains('Все программы').click()
+    cy.wait(1000)
     cy.get('[name="search"]').type(workoutName + '{enter}')
 }
 
