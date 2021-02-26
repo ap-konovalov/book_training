@@ -11,5 +11,5 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         env:
-          email: ${{ secrets.email }}
-          password: ${{ secrets.password }}
+          FIZIKA_EMAIL: ${{ secrets.FIZIKA_EMAIL }}
+          FIZIKA_PASSWORD: ${{ secrets.FIZIKA_PASSWORD }}
