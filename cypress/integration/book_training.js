@@ -1,7 +1,7 @@
 describe('Workout booking app', () => {
   it('Book workout on this and next week', () => {
     cy.visit(Cypress.env('login_url'))
-    login(Cypress.env('email'),Cypress.env('password'))
+    login(Cypress.env('FIZIKA_EMAIL'),Cypress.env('FIZIKA_PASSWORD'))
     selectWorkout(Cypress.env('workout'))
 	book()
 	goToNextWeek()
