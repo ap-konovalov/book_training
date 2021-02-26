@@ -1,0 +1,8 @@
+{
+	"env": {
+		"login_url": "https://newgymkk.perfectgym.ru/ClientPortal2/#/Login",
+		"email" : "aa",
+		"password": "",
+		"workout" : "Хатха-Йога"
+	}
+}

@@ -1,0 +1,23 @@
+{
+  "name": "book_training",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ap-konovalov/book_training.git"
+  },
+  "keywords": [],
+  "author": "ap-konovalov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ap-konovalov/book_training/issues"
+  },
+  "homepage": "https://github.com/ap-konovalov/book_training#readme",
+  "description": "",
+  "devDependencies": {
+    "cypress": "~6.5.0"
+  }
+}
