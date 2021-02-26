@@ -13,3 +13,5 @@ jobs:
         env:
           email: ${{ secrets.email }}
           password: ${{ secrets.password }}
+        run: |
+          echo "$email"
