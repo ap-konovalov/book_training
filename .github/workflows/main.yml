@@ -1,8 +1,8 @@
 name: End-to-end tests
 on:
   schedule:
-    - cron:  '01 16 * * MON,FRI'
-    - cron:  '01 08 * * SUN'
+    - cron:  '04 16 * * MON,FRI'
+    - cron:  '04 08 * * SUN'
 jobs:
   cypress-run:
     runs-on: ubuntu-16.04
