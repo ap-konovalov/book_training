@@ -1,18 +1,18 @@
 describe('Workout booking app', () => {
-  it('Book workout on this week', () => {
-    cy.visit(Cypress.env('login_url'))
-    login(Cypress.env('FIZIKA_EMAIL'),Cypress.env('FIZIKA_PASSWORD'))
-    selectWorkout(Cypress.env('workout'))
-	book()
-  })
+//  it('Book workout on this week', () => {
+//    cy.visit(Cypress.env('login_url'))
+//    login(Cypress.env('FIZIKA_EMAIL'),Cypress.env('FIZIKA_PASSWORD'))
+//    selectWorkout(Cypress.env('workout'))
+//	book()
+//  })
 
-   it('Book workout on next week', () => {
+  it('Book workout on next week', () => {
     cy.visit(Cypress.env('login_url'))
     login(Cypress.env('FIZIKA_EMAIL'),Cypress.env('FIZIKA_PASSWORD'))
     selectWorkout(Cypress.env('workout'))
   	goToNextWeek()
     book()
-    })
+  })
 })
 
 function login(email,password){
