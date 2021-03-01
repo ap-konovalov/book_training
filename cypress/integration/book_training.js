@@ -28,6 +28,7 @@ function selectWorkout(workoutName){
 function book(){
 	cy.wait(1000)
     cy.contains('Участвовать').click({force: true})
+    cy.wait(2000)
 }
 
 function goToNextWeek(){

@@ -1,8 +1,7 @@
-name: Book yoga training
+name: Debug run
 on:
   schedule:
-    - cron:  '04 16 * * MON,FRI'
-    - cron:  '04 08 * * SUN'
+    - cron:  '*/5 * * * *'
 jobs:
   cypress-run:
     runs-on: ubuntu-16.04
@@ -16,3 +15,4 @@ jobs:
         env:
           CYPRESS_FIZIKA_EMAIL: ${{ secrets.fizika_email }}
           CYPRESS_FIZIKA_PASSWORD: ${{ secrets.fizika_password }}
+          CYPRESS_workout: 'Strong'
