@@ -1,12 +1,18 @@
 describe('Workout booking app', () => {
-  it('Book workout on this and next week', () => {
+  it('Book workout on this week', () => {
     cy.visit(Cypress.env('login_url'))
     login(Cypress.env('FIZIKA_EMAIL'),Cypress.env('FIZIKA_PASSWORD'))
     selectWorkout(Cypress.env('workout'))
 	book()
-	goToNextWeek()
-    book()
   })
+
+   it('Book workout on next week', () => {
+    cy.visit(Cypress.env('login_url'))
+    login(Cypress.env('FIZIKA_EMAIL'),Cypress.env('FIZIKA_PASSWORD'))
+    selectWorkout(Cypress.env('workout'))
+  	goToNextWeek()
+    book()
+    })
 })
 
 function login(email,password){
@@ -27,10 +33,11 @@ function selectWorkout(workoutName){
 
 function book(){
 	cy.wait(1000)
-    cy.contains('Участвовать').click({force: true})
+    cy.contains('Участвовать').click()
     cy.wait(2000)
 }
 
 function goToNextWeek(){
+    cy.wait(1000)
 	cy.get('.glyphicon-cp-button-right-1').click()
 }
