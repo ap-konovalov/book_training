@@ -1,4 +1,4 @@
-name: Debug run
+name: Debug run. Book Total Body on next week when push on main branch
 on:
   push:
     branches:    
