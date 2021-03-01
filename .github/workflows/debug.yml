@@ -18,4 +18,4 @@ jobs:
         env:
           CYPRESS_FIZIKA_EMAIL: ${{ secrets.fizika_email }}
           CYPRESS_FIZIKA_PASSWORD: ${{ secrets.fizika_password }}
-          CYPRESS_workout: 'Strong'
+          CYPRESS_workout: 'Total'
