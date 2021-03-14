@@ -1,8 +1,8 @@
 name: Book yoga training
 on:
   schedule:
-    - cron:  '04 16 * * MON,FRI'
-    - cron:  '04 08 * * SUN'
+    - cron:  '04 05 * * MON,FRI'
+    - cron:  '04 05 * * SUN'
 jobs:
   cypress-run:
     runs-on: ubuntu-16.04
